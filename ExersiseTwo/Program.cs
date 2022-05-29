@@ -6,9 +6,11 @@ namespace ExerciseTwo
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i <= 5; i++)
+            Console.WriteLine("Input number:");
+            int k = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= k; i++)
             {
-                for (int m = 5; m >= i; m--)
+                for (int m = k; m >= i; m--)
                 {
                     Console.Write(" ");
                 }
