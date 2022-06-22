@@ -6,7 +6,8 @@ namespace ExerciseFive
     {
         static void Main(string[] args)
         {
-            List<string> rptNum = new List<string>();
+            //List<string> rptNum = new List<string>();
+            int rpt = 0;
             Console.WriteLine("inter number greater than 100:");
             long bigNum = Convert.ToInt64(Console.ReadLine());
             while (bigNum < 100)
@@ -25,10 +26,11 @@ namespace ExerciseFive
             {
                 if (i % 10 == shrtNum)
                 {
-                    rptNum.Add($"{shrtNum} repeated");
+                    //rptNum.Add($"{shrtNum} repeated");
+                    rpt += 1;
                 }
             }
-            Console.WriteLine($"number {shrtNum} reapet {rptNum.Count} times in number {bigNum}");
+            Console.WriteLine($"number {shrtNum} reapet {rpt} times in number {bigNum}");
         }
     }
 }
